@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>Meem</title>
+        <link rel="stylesheet" href="./contactUsPage/ContactUs.css">
+        <html lang="ar-sa">
+<meta charset="UTF-8" />
+<script type="text/javascript">
+     var divs = new Array();
+    divs[0] = "errFirst";
+    divs[1] = "errLast";
+    divs[2] = "errEmail";
+    function validate()
+	{
+      var inputs = new Array();
+      inputs[0] = document.getElementById('first').value;
+      inputs[1] = document.getElementById('last').value;
+      inputs[2] = document.getElementById('email').value;
+      
+      var errors = new Array();
+      errors[0] = "<span style='color:red'>Please enter your first name!</span>";
+      errors[1] = "<span style='color:red'>Please enter your last name!</span>";
+      errors[2] = "<span style='color:red'>Please enter your email!</span>";
+      //console.log(errors);
+      for (i in inputs)
+      {
+        var errMessage = errors[i];
+        var div = divs[i];
+        if (inputs[i] == "")
+        	document.getElementById(div).innerHTML = errMessage;
+        else if (i==2)
+        {
+          var atpos=inputs[i].indexOf("@");
+          var dotpos=inputs[i].lastIndexOf(".");
+          if (atpos<1 || dotpos<atpos+2 || dotpos+2>=inputs[i].length)
+        	document.getElementById('errEmail').innerHTML = "<span style='color: red'>Enter a valid email address!</span>";
+          else
+        	document.getElementById(div).innerHTML = "OK!";
+        }
+        else
+        	document.getElementById(div).innerHTML = "OK!";
+       }
+     }
+    function finalValidate()
+        {
+          var count = 0;
+          for(i=0;i<3;i++)
+          {
+            var div = divs[i];
+            if(document.getElementById(div).innerHTML == "OK!")
+            count = count + 1;
+          }
+          if(count == 3){
+          	document.getElementById("errFinal").innerHTML = "All the data you entered is correct!!!";
+            location.reload();
+        }
+        }
+
+   </script>
+    </head>
+
+    <body>
+        <div class="total">
+            <div class="header">
+                <div class="head-left">
+                    <a href="./index.html"><img class="logo" src="./shopping-cart.png"></a>
+                    <a href="./index.html"><div id="onshop">Meem</div></a>
+                </div>
+                <div class="head-mid">
+                    <input type="text" placeholder="What do you meem?" class="searchBar" style="font-family: 'Cairo';">
+                    <div id="searchICON" >
+                        <img src="search.png" class="searchIcon"    >
+                    </div>
+                </div>
+                <div class="head-right">
+                    <div class="viewCart">
+                        <a href="./MyCart.html"><img src="./add-to-cart.png"></a>
+                        <a href="./MyCart.html"> My Cart</a>
+                    </div>
+                    
+                    <a href="./profile.html"><img src="profile.jpg" alt="" class="profpic"></a>
+                    <a href="./profile.html"><div >Profile Name</div></a>
+                </div>
+            </div>
+            <div class="ContactInfoContainer">
+                <label >First Name</label>
+                <input type="text" onkeyup="validate();"  id="first">
+                <div id="errFirst"></div>
+                <label>Last Name</label>
+                <input type="text" onkeyup="validate()" id="last">
+                <div id="errLast"></div>
+                <label>Your E-Mail</label>
+                <input type="text" placeholder="Example@meem.com" id="email" onkeyup="validate();">
+                <div id="errEmail"></div>
+                <label>Subject</label>
+                <input type="tex" class="Subject">
+                <label>Your Message</label>
+                <textarea class="Message" placeholder="Feel free to say whatever you want :)"></textarea>
+                <button class="Submit" id="create" onclick="finalValidate();"  >Send</button>
+                <div id="errFinal"></div>
+            </div>
+            <div class="footer">
+                <div class="footerlogo">
+                    <img src="shopping-cart.png" class="logo">
+                    <div id="onshop">Meem</div>
+                </div>
+                <div class="Boxes">
+                <div class="footerBox">
+                    <div class="title">OVERVIEW</div>
+                    <a href="#" class="text">About</a>
+                    <a href="#" class="text">Contacts</a>
+                    <a href="#" class="text">Terms of Use</a>
+                    <a href="#" class="text">Privacy Policy</a>
+                    <a href="#" class="text">Team</a>
+                </div>
+                <div class="footerBox">
+                    <div class="title">community</div>
+                    <a href="#" class="text">Community Central</a>
+                    <a href="#" class="text">Support</a>
+                    <a href="#" class="text">Help</a>
+                    <a href="#" class="text">Do not sell my info</a>
+                </div>
+                <div class="footerBox">
+                    <div class="title">OVERVIEW</div>
+                    <a href="#" class="text">About</a>
+                    <a href="#" class="text">Contacts</a>
+                    <a href="#" class="text">Terms of Use</a>
+                    <a href="#" class="text">Privacy Policy</a>
+                    <a href="#" class="text">Team</a>
+                </div>
+                <div class="footerBox">
+                    <div class="title">fandom apps</div>
+                    <a href="#" class="text">
+                        <img src="available-removebg-preview (1).png">
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

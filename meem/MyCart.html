@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <title>Meem</title>
+        <link rel="stylesheet" href="./MyCartPage/myCartStyle.css">
+        <script src="./Script.js"></script>
+<meta charset="UTF-8" />
+    </head>
+<body onload="CalcTotal()">
+    <div class="header">
+        <div class="head-left">
+            <a href="./index.html"><img class="logo" src="./shopping-cart.png"></a>
+            <a href="./index.html"><div id="onshop">Meem</div></a>
+        </div>
+        <div class="head-mid">
+            <input type="text" placeholder="What do you meem?" class="searchBar" style="font-family: 'Cairo';">
+            <div id="searchICON" >
+                <img src="search.png" class="searchIcon"    >
+            </div>
+        </div>
+        <div class="head-right">
+            <a href="./profile.html"><img src="profile.jpg" alt="" class="profpic"></a>
+            <a href="./profile.html"><div >Profile Name</div></a>
+        </div>
+    </div>
+    <div class="lowerhead ">
+               
+        <div class="lowerhead">
+            <a href="" class="menu-box">Laptops</a>
+            <a href="" class="menu-box">Phones</a>
+            <a href="" class="menu-box">Clothes</a>
+            <a href="" class="menu-box">Super Market</a>
+            <a href="" class="menu-box">Glasses</a>
+        </div>
+    </div>
+    <main>
+        <div class="mainLeftContainer">
+            <div id="CartTitle">Cart <p>(<span id="CartQuantity">3</span> item)</p></div>
+            <div class="items">
+            <div class="itemContainer">
+                <div class="itemContainerLeft">
+                    <div class="ItemImg"><img src="./MyCartPage/pics/41I-7rrQFrL._AC__ccexpress.png"></div>
+                    <div class="itemDetails">
+                        <div class="brand">Acsori</div>
+                        <div class="itemDetails">
+                            <div class="itemTitle"><a href="./Itempage.html">Folding Bed Laptop Table multicolour</a></div>
+                        <div class="orderDate">Ship in 28 hours</div>
+                        <div class="itemOwner">Sold by <span>Tiec</span></div>
+                    </div>
+                    <div class="itemAction">
+                         <div class="LoveBox">
+                             <img class="itemLove" onclick="loveClicked(calcIdx('Folding Bed Laptop Table multicolour'))" src="./MyCartPage/pics/favorite_FILL0_wght400_GRAD0_opsz48.png">
+                            <div class="addToLoves" >Add to Favorites</div>
+                        </div>
+                        <div class="itemRemove">
+                            <img class="removePic" onclick="RemoveItem(calcIdx('Folding Bed Laptop Table multicolour'))" src="./MyCartPage/pics/delete_sweep_FILL0_wght400_GRAD0_opsz48.png">
+                            <span>Remove from cart</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="itemContainerRight">
+                    <div class="itemPriceBox">EGP<div class="itemPrice">500</div></div>
+                    <div class="itemQuantity">
+                        <button class="minus" onclick="minus(calcIdx('Folding Bed Laptop Table multicolour'))">-</button>
+                        <div class="quantity">1</div>
+                        <button class="plus" onclick="plus(calcIdx('Folding Bed Laptop Table multicolour'))">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="itemContainer">
+                <div class="itemContainerLeft">
+                    <div class="ItemImg"><img  src="./MyCartPage/pics/ph2-removebg-preview.png"></div>
+                    <div class="itemDetails">
+                        <div class="brand">Samsung</div>
+                        <div class="itemDetails">
+                            <div class="itemTitle"><a  href="./Itempage.html">Macbook Air MGN63AB/A 13-Inch Display, M1 Chip With 8-Core Processor And 7-Core Graphics/8GB RAM/256GB SSD/Mac OS English/Arabic Space Grey</a></div>
+                        <div class="orderDate">Ship in 35 hours</div>
+                        <div class="itemOwner">Sold by <span>Samsung</span></div>
+                    </div>
+                    <div class="itemAction">
+                         <div class="LoveBox">   <img class="itemLove" onclick="loveClicked(calcIdx('Macbook Air MGN63AB/A 13-Inch Display, M1 Chip With 8-Core Processor And 7-Core Graphics/8GB RAM/256GB SSD/Mac OS English/Arabic Space Grey'))" src="./MyCartPage/pics/favorite_FILL0_wght400_GRAD0_opsz48.png">
+                            <div class="addToLoves" >Add to Favorites</div>
+                        </div>
+                        <div class="itemRemove">
+                            <img class="removePic" onclick="RemoveItem(calcIdx('Macbook Air MGN63AB/A 13-Inch Display, M1 Chip With 8-Core Processor And 7-Core Graphics/8GB RAM/256GB SSD/Mac OS English/Arabic Space Grey'))" src="./MyCartPage/pics/delete_sweep_FILL0_wght400_GRAD0_opsz48.png">
+                            <span>Remove from cart</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="itemContainerRight">
+                    <div class="itemPriceBox">EGP<div class="itemPrice">7500</div></div>
+                    <div class="itemQuantity">
+                        <button class="minus" onclick="minus(calcIdx('Macbook Air MGN63AB/A 13-Inch Display, M1 Chip With 8-Core Processor And 7-Core Graphics/8GB RAM/256GB SSD/Mac OS English/Arabic Space Grey'))">-</button>
+                        <div class="quantity">1</div>
+                        <button class="plus" onclick="plus(calcIdx('Macbook Air MGN63AB/A 13-Inch Display, M1 Chip With 8-Core Processor And 7-Core Graphics/8GB RAM/256GB SSD/Mac OS English/Arabic Space Grey'))">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="itemContainer">
+                <div class="itemContainerLeft">
+                    <div class="ItemImg"><img src="./MyCartPage/pics/384246-3_ccexpress.png"></div>
+                    <div class="itemDetails">
+                        <div class="brand">Chelsee</div>
+                        <div class="itemDetails">
+                            <div class="itemTitle"><a href="./Itempage.html">Chelsee football Club T-Shirt</a></div>
+                        <div class="orderDate">Ship in 18 hours</div>
+                        <div class="itemOwner">Sold by <span>Chelsee Store</span></div>
+                    </div>
+                    <div class="itemAction">
+                         <div class="LoveBox">   <img class="itemLove" onclick="loveClicked(calcIdx('Chelsee football Club T-Shirt'))" src="./MyCartPage/pics/favorite_FILL0_wght400_GRAD0_opsz48.png">
+                            <div class="addToLoves" >Add to Favorites</div>
+                        </div>
+                        <div class="itemRemove">
+                            <img class="removePic"  onclick="RemoveItem(calcIdx('Chelsee football Club T-Shirt'))" src="./MyCartPage/pics/delete_sweep_FILL0_wght400_GRAD0_opsz48.png">
+                            <span>Remove from cart</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="itemContainerRight">
+                    <div class="itemPriceBox">EGP<div class="itemPrice">350</div></div>
+                    <div class="itemQuantity">
+                        <button class="minus" onclick="minus(calcIdx('Chelsee football Club T-Shirt'))">-</button>
+                        <div class="quantity">1</div>
+                        <button class="plus" onclick="plus(calcIdx('Chelsee football Club T-Shirt'))">+</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+        <div class="mainRightContainer">
+            <div class="orderSummary">Order summary</div>
+            <div class="coupon">
+                <input type="text" placeholder="Get discount using coupon!" id="couponInput">
+                <button onclick="CheckCoupon()">APPLY</button>
+            </div>
+            <div id="discount"></div>
+            <div class="totalCost">
+                Total
+                <div>
+                <span>EGP</span>
+                <div id="totalCost">0</div>
+                </div>
+                
+            </div>
+            <div class="buyButton"><button id="buy">BUY</button></div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="footerlogo">
+            <img src="shopping-cart.png" class="logo">
+            <div id="onshop">Meem</div>
+        </div>
+        <div class="Boxes">
+        <div class="footerBox">
+            <div class="title">OVERVIEW</div>
+            <a href="#" class="text">About</a>
+            <a href="#" class="text">Contacts</a>
+            <a href="#" class="text">Terms of Use</a>
+            <a href="#" class="text">Privacy Policy</a>
+            <a href="#" class="text">Team</a>
+        </div>
+        <div class="footerBox">
+            <div class="title">community</div>
+            <a href="#" class="text">Community Central</a>
+            <a href="#" class="text">Support</a>
+            <a href="#" class="text">Help</a>
+            <a href="#" class="text">Do not sell my info</a>
+        </div>
+        <div class="footerBox">
+            <div class="title">OVERVIEW</div>
+            <a href="#" class="text">About</a>
+            <a href="#" class="text">Contacts</a>
+            <a href="#" class="text">Terms of Use</a>
+            <a href="#" class="text">Privacy Policy</a>
+            <a href="#" class="text">Team</a>
+        </div>
+        <div class="footerBox">
+            <div class="title">fandom apps</div>
+            <a href="#" class="text">
+                <img src="available-removebg-preview (1).png">
+            </a>
+        </div>
+    </div>
+    </div>
+</body>
