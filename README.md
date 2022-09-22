@@ -11,3 +11,7 @@
 + team page (aboutUsPage.html) which display team members.
 + contact us page (contactUs.html) which display a form with some validations
 ### Each page has its folder which contains the CSS file and Pics used in this page
+### Author
+- ## Marwan Wannan
+- ## Mohamed Rady
+- ## Abdelhady Mohamed
