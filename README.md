@@ -1,8 +1,8 @@
 # Meem
-### Meem is an online shop static web page that allows users to view &amp; sell their products to other users. <br />
-+ Developed useing HTML5,CSS and Java script.<br />
-- It is flexible and resoposive to any screen changes.<br />
-* It was built as a Studing project (3 students and forth is me the team leader) which and got the highest rate overall.
+### Meem is an online shop static web page that allows users to view & sell their products to other users.
+- Developed using HTML5,CSS and Javascript.
+- It is flexible and responsive to any screen changes.
+- It was built as a Studying project (3 students and forth is me the team leader) and got the highest rate overall.
 ### OverView
 https://user-images.githubusercontent.com/50783061/195740505-64eb69fb-3dc4-4031-8d0e-3a0e5d5011f5.mp4
 ### Project contains 6 pages and intro page (Cover.html)
