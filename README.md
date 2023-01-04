@@ -6,9 +6,9 @@
 ### OverView
 https://user-images.githubusercontent.com/50783061/195740505-64eb69fb-3dc4-4031-8d0e-3a0e5d5011f5.mp4
 ### Project contains 6 pages and intro page (Cover.html)
-+ the main page (index.html) which views all products. 
++ the main page (index.html) which views all products.  **Developed by me**
 + item page (itempage.html) which has all product details and reviews. **Developed by me**
-+ mycart page (mycart.html) which display user's cart with its items , user can increase or decrease amount of any item , add item to favorites , remove item and enter a valid copun like ( FCI ) to get a discount. **Developed by me**
++ mycart page (mycart.html) which display user's cart with its items , user can increase or decrease amount of any item , add item to favorites , remove item and enter a valid copun like ( FCI ) to get a discount.
 + profile page (profile.html) which display user's info and orders.
 + team page (aboutUsPage.html) which display team members.
 + contact us page (contactUs.html) which display a form with some validations
